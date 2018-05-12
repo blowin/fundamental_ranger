@@ -16,7 +16,8 @@ blowin::rangers::range(0, table_widget->rowCount(),
 ## fundamental_ranger
 Fundamental ranger with STL algorithms 
 ```c++
-blowin::rangers::fundamental_ranger<int> iranger(0, last_el_count);
+blowin::rangers::fundamental_ranger<int> iranger(0, last_el_count); 
+//or blowin::rangers::ranger_t::i8 iranger(0, last_el_count);
 const auto find_val = std::find_if(iranger.cbegin(), iranger.cend(), 
  [table_widget, &server_name, name_collumn_index = 3](const int i){
 		return (table_widget->item(i) == server_name);
