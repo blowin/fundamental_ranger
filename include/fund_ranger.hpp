@@ -15,7 +15,8 @@ namespace blowin {
 			template<class TestT>
 			using is_fundamental_iterator_t = typename std::is_same<TestT, fundamental_iterator>::type;
 		public:
-			static_assert(std::is_fundamental<T>::value,
+			static_assert(std::is_fundamental<T>::value &&
+				!std::is_same<typename std::decay<T>::type, bool>::value,
 				"Iterator type not fundamental");
 
 			using iterator_category = std::random_access_iterator_tag;
