@@ -116,5 +116,26 @@ namespace blowin {
 			T start_;
 			T finish_;
 		};
+		
+		namespace ranger_t {
+			using i8 = fundamental_ranger<int_fast8_t>;
+			using i16 = fundamental_ranger<int_fast16_t>;
+			using i32 = fundamental_ranger<int_fast32_t>;
+			using i64 = fundamental_ranger<int_fast64_t>;
+			using u8 = fundamental_ranger<uint_fast8_t>;
+			using u16 = fundamental_ranger<uint_fast16_t>;
+			using u32 = fundamental_ranger<uint_fast32_t>;
+			using u64 = fundamental_ranger<uint_fast64_t>;
+		}
+		namespace iterator_t {
+			using i8 = fundamental_iterator<int_fast8_t>;
+			using i16 = fundamental_iterator<int_fast16_t>;
+			using i32 = fundamental_iterator<int_fast32_t>;
+			using i64 = fundamental_iterator<int_fast64_t>;
+			using u8 = fundamental_iterator<uint_fast8_t>;
+			using u16 = fundamental_iterator<uint_fast16_t>;
+			using u32 = fundamental_iterator<uint_fast32_t>;
+			using u64 = fundamental_iterator<uint_fast64_t>;
+		}
 	}
 }
