@@ -1,4 +1,4 @@
-# fundamental_ranger
+# ranger
 constexpr fundamental iterator and foreach for fundamental types
 
 ***
