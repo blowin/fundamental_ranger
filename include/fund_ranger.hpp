@@ -6,7 +6,7 @@ namespace blowin {
 	namespace rangers {
 		template <class IterT, class CallableT>
 		constexpr void range(IterT start, const IterT finish, CallableT&& callable, const IterT steep = 1) {
-			for (; start < finish; start += 1)
+			for (; start < finish; start += steep)
 				callable(start);
 		}
 
